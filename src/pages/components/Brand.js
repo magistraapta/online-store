@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
-export default function Brand({brand}) {
+
+export default function Brand({ brand }) {
   return (
-    <div className='m-4 border w-4/12 h-2/6 p-4'>
-        <div className=' flex justify-center items-center border h-full'>
-            <h1 className='text-3xl font-bold'>{brand}</h1>
-        </div>
+    <div className=' my-4 mx-2 -red-500  w-4/12 flex items-center '>
+      <Image src={brand} alt='pict'  />
+
     </div>
-  )
+  );
 }

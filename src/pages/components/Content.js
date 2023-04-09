@@ -1,13 +1,18 @@
 import React from 'react';
-import Brand from './Brand'
+import Brand from './Brand';
+import nike from '../images/nike.jpeg';
+import newBalance from '../images/new-balance.jpeg';
+import adidas from '../images/adidas.jpeg';
 
 export default function Content() {
   return (
-    <div className='border flex justify-center my-4 h-screen'>
-      <div className='flex border w-9/12' >
-        <Brand brand="Adidas"/>
-        <Brand brand="Nike"/>
-        <Brand brand="New Balance"/>
+    <div>
+      <div className=' flex justify-center my-4'>
+        <div className='flex justify-around  w-9/12'>
+          <Brand brand={nike} />
+          <Brand brand={newBalance} />
+          <Brand brand={adidas} />
+        </div>
       </div>
     </div>
   );
