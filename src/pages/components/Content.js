@@ -3,6 +3,7 @@ import Brand from './Brand';
 import nike from '../images/nike.jpeg';
 import newBalance from '../images/new-balance.jpeg';
 import adidas from '../images/adidas.jpeg';
+import Items from '../components/items'
 
 export default function Content() {
   return (
