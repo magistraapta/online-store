@@ -2,9 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import gambarItem from '../images/frame 28.svg';
 import Link from 'next/link';
-export default function Item() {
+export default function Item({category}) {
   return (
     <div className='border m-4 w-3/12 rounded-lg'>
+      <h1>{category}</h1>
       <Link href="/detail">
         <Image src={gambarItem} alt='items' height={500} className='rounded-t-lg' />
         <div className='m-4'>
