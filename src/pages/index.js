@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import Navbar from './components/Navbar';
 import Content from './components/Content';
 import Items from './components/items';
+import AccorContainer from './components/AccorContainer';
 
 export default function Home() {
   return (
@@ -11,6 +10,7 @@ export default function Home() {
       <Content />
       <Items/>
       <Items/>
+      <AccorContainer/>
     </>
   );
 }
